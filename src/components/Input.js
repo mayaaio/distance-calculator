@@ -1,5 +1,5 @@
 import {
-    TextInput
+    TextInput,
   } from '@mantine/core';
 
 const DistanceInput = ( props ) => {
