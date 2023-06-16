@@ -26,3 +26,6 @@ jsconfig.json
 
 # dotenv environment variables file
 .env
+
+# vscode settings
+.vscode/
