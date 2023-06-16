@@ -1,7 +1,6 @@
 import './App.css';
 import {
   AppShell,
-  Header,
   Group,
   Stack,
   Button,
@@ -9,6 +8,7 @@ import {
 } from '@mantine/core';
 import { useState } from 'react';
 import MapInputStack from './components/MapInputStack';
+import AppHeader from './components/AppHeader';
 
 const App = () => {
 
@@ -52,11 +52,7 @@ const App = () => {
   }
 
   return (
-    <AppShell
-      header={<Header height={60} p="md">
-                <Text fw={600}>Distance Calculator</Text>
-              </Header>}
-    >
+    <AppShell header={<AppHeader/>}>
       <Stack align="center">
         <Text ta="center">
             Points are accepted in the format latitude, longitude or as street addresses.
